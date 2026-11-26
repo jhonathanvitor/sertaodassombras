@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Screenshot;
+use App\Models\SiteSetting;
 use Illuminate\Support\Facades\Schema;
 use Livewire\Attributes\On;
 use Livewire\Component;
@@ -11,15 +12,20 @@ use Throwable;
 class GallerySection extends Component
 {
     public array $shots = [];
+
     public string $youtubeId;
+
     public bool $inlineTrailerPlaying = false;
+
     public bool $trailerModalOpen = false;
+
     public bool $lightboxOpen = false;
+
     public int $currentShot = 0;
 
     public function mount(): void
     {
-        $this->youtubeId = config('sertao.links.youtube_id', 'dQw4w9WgXcQ');
+        $this->youtubeId = SiteSetting::value('youtube_id');
         $this->shots = $this->loadShots();
     }
 

@@ -10,6 +10,12 @@ return [
     'copyright' => '© 2026 Expiai / Jhonathan Vitor da Silva Costa LTDA. Todos os direitos reservados.',
     'grant_text' => 'Projeto contemplado pelo Edital nº 23/2024/SECEL/MT – Cinemotion Audiovisual (PNAB – Política Nacional Aldir Blanc de Fomento à Cultura).',
 
+    'admin' => [
+        'name' => env('ADMIN_NAME', 'Administrador'),
+        'email' => env('ADMIN_EMAIL'),
+        'password' => env('ADMIN_PASSWORD'),
+    ],
+
     'links' => [
         'download_windows' => env('SERTAO_DOWNLOAD_WINDOWS', 'https://SEU-LINK-AQUI/SertaoDasSombras_v1.0_Windows.exe'),
         'download_linux' => env('SERTAO_DOWNLOAD_LINUX', 'https://SEU-LINK-AQUI/SertaoDasSombras_v1.0_Linux.x86_64'),

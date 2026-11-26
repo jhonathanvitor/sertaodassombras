@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\DownloadLog;
+use App\Models\SiteSetting;
 use Illuminate\Support\Facades\Schema;
 use Livewire\Component;
 use Throwable;
@@ -10,19 +11,25 @@ use Throwable;
 class DownloadRequirementsSection extends Component
 {
     public string $downloadWindows;
+
     public string $downloadLinux;
+
     public string $itchUrl;
+
     public string $githubUrl;
+
     public string $version;
+
     public array $requirements = [];
 
     public function mount(): void
     {
-        $this->downloadWindows = config('sertao.links.download_windows');
-        $this->downloadLinux = config('sertao.links.download_linux');
-        $this->itchUrl = config('sertao.links.itch');
-        $this->githubUrl = config('sertao.links.github');
-        $this->version = config('sertao.version');
+        $settings = SiteSetting::values();
+        $this->downloadWindows = $settings['download_windows'];
+        $this->downloadLinux = $settings['download_linux'];
+        $this->itchUrl = $settings['itch'];
+        $this->githubUrl = $settings['github'];
+        $this->version = $settings['version'];
         $this->requirements = config('sertao.requirements', []);
     }
 

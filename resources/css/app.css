@@ -119,3 +119,10 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 .link-u { position:relative }
 .link-u::after { content:""; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:#C88A36; transition: width .3s ease; }
 .link-u:hover::after { width:100% }
+
+/* Painel administrativo */
+.admin-input { @apply w-full rounded-sm border border-bone/15 bg-abyss px-3 py-2 text-sm text-bone placeholder:text-mist/50 transition-colors focus:border-amber focus:outline-none focus:ring-1 focus:ring-amber/40; }
+.admin-label { @apply mb-1.5 block text-[11px] uppercase tracking-[.25em] text-mist; }
+.admin-error { @apply mt-1 text-xs text-red-400; }
+.admin-card { @apply rounded-sm border border-bone/10 bg-coal p-5 sm:p-6; }
+.admin-icon-btn { @apply grid h-9 w-9 place-items-center rounded-sm border border-bone/10 text-mist transition-colors hover:border-amber/50 hover:text-bone disabled:pointer-events-none disabled:opacity-30; }

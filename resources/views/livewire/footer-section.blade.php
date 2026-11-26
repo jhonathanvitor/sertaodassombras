@@ -34,27 +34,27 @@
             <!-- Redes sociais -->
             <ul class="flex items-center gap-3" aria-label="Redes sociais">
                 <li>
-                    <a href="{{ $links['instagram'] ?? '#' }}" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
+                    <a href="{{ ($links['instagram'] ?? '') ?: '#' }}" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
                         <i data-lucide="instagram" class="w-4 h-4"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ $links['youtube'] ?? '#' }}" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
+                    <a href="{{ ($links['youtube'] ?? '') ?: '#' }}" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
                         <i data-lucide="youtube" class="w-4 h-4"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ $links['twitter'] ?? '#' }}" target="_blank" rel="noopener" aria-label="X / Twitter" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
+                    <a href="{{ ($links['twitter'] ?? '') ?: '#' }}" target="_blank" rel="noopener" aria-label="X / Twitter" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
                         <i data-lucide="twitter" class="w-4 h-4"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ $links['itch'] ?? '#' }}" data-link="itch" target="_blank" rel="noopener" aria-label="Itch.io" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
+                    <a href="{{ ($links['itch'] ?? '') ?: '#' }}" data-link="itch" target="_blank" rel="noopener" aria-label="Itch.io" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
                         <i data-lucide="gamepad-2" class="w-4 h-4"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ $links['github'] ?? '#' }}" data-link="github" target="_blank" rel="noopener" aria-label="GitHub" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
+                    <a href="{{ ($links['github'] ?? '') ?: '#' }}" data-link="github" target="_blank" rel="noopener" aria-label="GitHub" class="w-10 h-10 grid place-items-center border border-bone/10 rounded-full text-mist hover:text-amber hover:border-amber/50 hover:shadow-[0_0_20px_rgba(200,138,54,.25)] transition-all">
                         <i data-lucide="github" class="w-4 h-4"></i>
                     </a>
                 </li>
