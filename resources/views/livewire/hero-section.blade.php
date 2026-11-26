@@ -79,8 +79,11 @@
 
     <div class="relative z-10 text-center px-5 pt-24 pb-16 max-w-5xl">
         <p class="reveal text-xs sm:text-sm uppercase tracking-[.5em] text-amber/90 mb-6">Expiai apresenta</p>
-        <h1 class="reveal reveal-d1 title-hero font-display font-black text-[2.6rem] leading-[1.05] sm:text-7xl md:text-8xl lg:text-[7.5rem] text-bone">
-            SERTÃO<br class="sm:hidden" /> DAS SOMBRAS
+        <h1 class="reveal reveal-d1">
+            <picture>
+                <source type="image/webp" srcset="{{ asset('img/logo-sertao-900.webp') }} 900w, {{ asset('img/logo-sertao-1600.webp') }} 1600w" sizes="(min-width: 1024px) 760px, 92vw" />
+                <img src="{{ asset('img/logo-sertao-900.png') }}" alt="Sertão das Sombras" width="900" height="390" fetchpriority="high" class="logo-hero mx-auto w-[92vw] max-w-[760px] h-auto" />
+            </picture>
         </h1>
         <div class="reveal reveal-d2 divider w-56 mx-auto my-8"></div>
         <p class="reveal reveal-d2 font-display italic text-lg sm:text-2xl text-bone/85 max-w-2xl mx-auto leading-relaxed">

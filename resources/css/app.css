@@ -55,6 +55,8 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 @keyframes flicker { 0%,100%{opacity:1} 47%{opacity:.92} 50%{opacity:.8} 53%{opacity:.95} }
 
 /* Título monumental */
+.logo-hero { filter: drop-shadow(0 12px 30px rgba(0,0,0,.95)) drop-shadow(0 0 60px rgba(139,30,30,.35)); animation: logoflicker 8s ease-in-out infinite; }
+@keyframes logoflicker { 0%,100%{opacity:1} 46%{opacity:1} 48%{opacity:.85} 50%{opacity:1} 52%{opacity:.9} 54%{opacity:1} }
 .title-hero { letter-spacing: .08em; text-shadow: 0 0 1px rgba(234,230,223,.5), 0 8px 40px rgba(0,0,0,.9), 0 0 80px rgba(139,30,30,.35); }
 
 /* Entrada ao rolar */
@@ -63,7 +65,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 .reveal-d1 { transition-delay: .12s } .reveal-d2 { transition-delay: .24s } .reveal-d3 { transition-delay: .36s }
 @media (prefers-reduced-motion: reduce) {
     .reveal { opacity:1; transform:none; transition:none }
-    .grain::after, .fog, .moon-glow { animation: none }
+    .grain::after, .fog, .moon-glow, .logo-hero { animation: none }
 }
 
 /* Botões */

@@ -26,7 +26,10 @@
 
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
             <div class="text-center md:text-left">
-                <p class="font-display font-bold tracking-[.18em] text-bone">SERTÃO DAS SOMBRAS</p>
+                <picture>
+                    <source srcset="{{ asset('img/logo-sertao-360.webp') }}" type="image/webp" />
+                    <img src="{{ asset('img/logo-sertao-900.png') }}" alt="Sertão das Sombras" width="360" height="156" loading="lazy" class="h-14 w-auto mx-auto md:mx-0" />
+                </picture>
                 <a href="mailto:{{ $email }}" class="mt-2 inline-flex items-center gap-2 text-sm text-mist hover:text-amber transition-colors">
                     <i data-lucide="mail" class="w-4 h-4"></i> {{ $email }}
                 </a>

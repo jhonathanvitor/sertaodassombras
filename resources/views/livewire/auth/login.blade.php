@@ -2,7 +2,12 @@
     <div class="w-full max-w-sm">
         <div class="mb-8 text-center">
             <p class="mb-3 text-[11px] uppercase tracking-[.4em] text-amber">Área restrita</p>
-            <h1 class="font-display text-2xl font-bold tracking-[.12em] text-bone">SERTÃO DAS SOMBRAS</h1>
+            <h1>
+                <picture>
+                    <source srcset="{{ asset('img/logo-sertao-360.webp') }}" type="image/webp" />
+                    <img src="{{ asset('img/logo-sertao-900.png') }}" alt="Sertão das Sombras" width="360" height="156" class="mx-auto h-16 w-auto" />
+                </picture>
+            </h1>
         </div>
 
         <form wire:submit="login" class="frame-rustic space-y-5 bg-coal p-7">

@@ -6,9 +6,12 @@
     class="fixed top-0 inset-x-0 z-50 border-b border-transparent transition-all duration-500"
 >
     <nav class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between" aria-label="Navegação principal">
-        <a href="#topo" class="group flex flex-col leading-none">
-            <span class="font-display font-bold text-lg sm:text-xl tracking-[.18em] text-bone group-hover:text-amber transition-colors">SERTÃO DAS SOMBRAS</span>
-            <span class="mt-1 text-[10px] uppercase tracking-[.35em] text-mist">Expiai</span>
+        <a href="#topo" class="group flex flex-col items-start leading-none" aria-label="Sertão das Sombras — início">
+            <picture>
+                <source srcset="{{ asset('img/logo-sertao-360.webp') }}" type="image/webp" />
+                <img src="{{ asset('img/logo-sertao-900.png') }}" alt="Sertão das Sombras" width="360" height="156" class="h-10 sm:h-12 w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,.8)] group-hover:drop-shadow-[0_0_14px_rgba(200,138,54,.5)] transition-all duration-300" />
+            </picture>
+            <span class="mt-1 text-[9px] uppercase tracking-[.35em] text-mist">Expiai</span>
         </a>
 
         <ul class="hidden lg:flex items-center gap-8 text-sm text-mist">
